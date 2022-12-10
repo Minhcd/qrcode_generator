@@ -1,0 +1,36 @@
+:root {
+  /* font */
+  font-family: 'Outfit', sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  /* layout */
+  --mobile: 375px;
+  --desktop: 1440px;
+  /* color */
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  background-color: var(--light-gray);
+}
+
+#app {
+  min-width: var(--mobile);
+  max-width: var(--desktop);
+  margin: 0 auto;
+  text-align: center;
+}
